@@ -1,32 +1,38 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404" width="100%">
+<img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404 Animated Header" width="100%">
 
-<br>
+<br><br>
 
-# 🔐 NOOR-404
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=900&color=00FF88&center=true&vCenter=true&width=850&lines=NOOR-404;Android+Security+Research;SSL%2FTLS+%7C+Native+Analysis;ARM64+%7C+x86+%7C+x86_64;Reverse+Engineering+Research" alt="NOOR-404 Typing Animation">
 
-### Facebook SSL Pinning Bypass
+<br><br>
 
-<p>
-  <img src="https://img.shields.io/badge/Android-Security-3DDC84?style=for-the-badge&logo=android&logoColor=white">
-  <img src="https://img.shields.io/badge/ARM64-Supported-00C853?style=for-the-badge">
-  <img src="https://img.shields.io/badge/x86-Supported-00C853?style=for-the-badge">
-  <img src="https://img.shields.io/badge/x86__64-Supported-00C853?style=for-the-badge">
-</p>
+<img src="https://img.shields.io/badge/⚡_STATUS-ONLINE-00C853?style=for-the-badge&labelColor=101010">
+<img src="https://img.shields.io/badge/ANDROID-SECURITY-3DDC84?style=for-the-badge&logo=android&logoColor=white">
+<img src="https://img.shields.io/badge/ARM64-SUPPORTED-00C853?style=for-the-badge">
+<img src="https://img.shields.io/badge/x86-SUPPORTED-00C853?style=for-the-badge">
+<img src="https://img.shields.io/badge/x86__64-SUPPORTED-00C853?style=for-the-badge">
 
-<p>
-  <b>Native Analysis • SSL/TLS Research • Android Reverse Engineering</b>
-</p>
+<br><br>
 
-<p>
-  <a href="https://github.com/NOOR-404">
-    <img src="https://img.shields.io/badge/GitHub-NOOR--404-181717?style=flat-square&logo=github&logoColor=white">
-  </a>
-  <img src="https://img.shields.io/badge/License-MIT-1976D2?style=flat-square">
-</p>
+<img src="https://img.shields.io/github/stars/NOOR-404?style=for-the-badge&logo=github&label=STARS&color=00C853">
+<img src="https://img.shields.io/github/forks/NOOR-404?style=for-the-badge&logo=github&label=FORKS&color=1976D2">
+<img src="https://img.shields.io/github/last-commit/NOOR-404?style=for-the-badge&label=LAST%20UPDATE&color=FF9800">
+
+<br><br>
+
+<b>🔬 Native Analysis • 🔐 SSL/TLS Research • 📱 Android Security</b>
+
+<br><br>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00FF88&section=header" width="90%">
 
 </div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+</p>
 
 ---
 
@@ -355,6 +361,10 @@ The author does not encourage unauthorized modification or interception of third
 You are responsible for complying with applicable laws, regulations, and service terms when using this repository.
 
 ---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:101010,50:003B2A,100:00C853" width="100%">
+</p>
 
 ## 👤 NOOR-404
 
