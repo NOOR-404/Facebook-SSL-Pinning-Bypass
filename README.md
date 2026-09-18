@@ -4,11 +4,11 @@ FACEBOOK SSL PINNING RESEARCH
 
 Educational Purpose Only
 
-<br>""Android" (https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)" (#-platform)
-""x86" (https://img.shields.io/badge/Arch-x86-blue?style=for-the-badge)" (#-supported-architectures)
-""x86_64" (https://img.shields.io/badge/Arch-x86__64-blue?style=for-the-badge)" (#-supported-architectures)
-""ARM64" (https://img.shields.io/badge/Arch-ARM64-blue?style=for-the-badge)" (#-supported-architectures)
-""Education" (https://img.shields.io/badge/Purpose-Education-orange?style=for-the-badge)" (#-disclaimer)
+<br>""Platform" (https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge%26logo=android%26logoColor=white)" (#platform)
+""x86" (https://img.shields.io/badge/Arch-x86-0078D4?style=for-the-badge)" (#supported-architectures)
+""x86_64" (https://img.shields.io/badge/Arch-x86__64-0078D4?style=for-the-badge)" (#supported-architectures)
+""ARM64" (https://img.shields.io/badge/Arch-ARM64-0078D4?style=for-the-badge)" (#supported-architectures)
+""Education" (https://img.shields.io/badge/Purpose-Education-FF9800?style=for-the-badge)" (#disclaimer)
 
 </div>---
 
@@ -31,21 +31,21 @@ The project is intended for:
 
 🧩 Supported Architectures
 
-<div align="center">Architecture| Status
+Architecture| Status
 🖥️ x86_64| ✅ Supported
 🖥️ x86| ✅ Supported
 📱 ARM64| ✅ Supported
 
-</div>                    ┌─────────────────┐
+                    ┌─────────────────┐
                     │     NOOR-404    │
-                    │ Security Research
+                    │ Security Research │
                     └────────┬────────┘
                              │
              ┌───────────────┼───────────────┐
              │               │               │
              ▼               ▼               ▼
         ┌─────────┐     ┌─────────┐     ┌─────────┐
-        │  x86    │     │ x86_64  │     │ ARM64   │
+        │   x86   │     │ x86_64  │     │  ARM64  │
         └─────────┘     └─────────┘     └─────────┘
              │               │               │
              └───────────────┼───────────────┘
@@ -145,12 +145,12 @@ Android
 
 Suitable targets include:
 
-✔ Your own application
-✔ Your own debug build
-✔ Authorized security-testing target
-✔ Dedicated laboratory APK
-✔ Deliberately vulnerable test application
-✔ Android emulator
+- ✔ Your own application
+- ✔ Your own debug build
+- ✔ Authorized security-testing target
+- ✔ Dedicated laboratory APK
+- ✔ Deliberately vulnerable test application
+- ✔ Android emulator
 
 ---
 
@@ -195,7 +195,7 @@ Study:
 
 🛡️ Defensive Security
 
-The knowledge gained from this research can also be used to improve Android application security.
+The same research can be used to improve Android application security.
 
 Recommended areas of study:
 
@@ -236,14 +236,14 @@ NOOR-404/
 
 ⚙️ Architecture Matrix
 
-<div align="center">Component| x86| x86_64| ARM64
+Component| x86| x86_64| ARM64
 Android Testing| ✅| ✅| ✅
 Native ".so" Research| ✅| ✅| ✅
 TLS / SSL Research| ✅| ✅| ✅
 Emulator Testing| ✅| ✅| —
 Physical Device Testing| —| —| ✅
 
-</div>---
+---
 
 🎯 Educational Objectives
 
