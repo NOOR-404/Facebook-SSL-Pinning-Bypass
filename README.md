@@ -1,18 +1,20 @@
-<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" width="100%" alt="NOOR-404">🔐 FACEBOOK SSL PINNING BYPASS
+<div align="center"><img src="assets/banner.png" alt="NOOR-404" width="100%"><br>🔐 NOOR-404
 
-"NOOR-404"
+FACEBOOK SSL PINNING RESEARCH
 
-📚 Educational Purpose Only
+Educational Purpose Only
 
-""Architecture" (https://img.shields.io/badge/Architecture-x86__64%20%7C%20x86%20%7C%20ARM64-blue?style=for-the-badge)" (#-supported-architectures)
-""Platform" (https://img.shields.io/badge/Platform-Android-green?style=for-the-badge)" (#-platform)
-""Purpose" (https://img.shields.io/badge/Purpose-Education-orange?style=for-the-badge)" (#-disclaimer)
+<br>""Android" (https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)" (#-platform)
+""x86" (https://img.shields.io/badge/Arch-x86-blue?style=for-the-badge)" (#-supported-architectures)
+""x86_64" (https://img.shields.io/badge/Arch-x86__64-blue?style=for-the-badge)" (#-supported-architectures)
+""ARM64" (https://img.shields.io/badge/Arch-ARM64-blue?style=for-the-badge)" (#-supported-architectures)
+""Education" (https://img.shields.io/badge/Purpose-Education-orange?style=for-the-badge)" (#-disclaimer)
 
 </div>---
 
 📖 About
 
-NOOR-404 Facebook SSL Pinning Bypass is an Android security-research project focused on understanding SSL/TLS certificate validation, certificate pinning, native libraries, and Android network-security mechanisms.
+NOOR-404 is an Android security-research project focused on learning how applications implement TLS/SSL certificate validation, certificate pinning, native libraries, and network-security mechanisms.
 
 The project is intended for:
 
@@ -20,7 +22,7 @@ The project is intended for:
 - 🔬 Android security analysis
 - 🧪 Authorized testing
 - 🛠️ Debugging test builds
-- 🔐 TLS/SSL security research
+- 🔐 TLS/SSL research
 - 📱 Controlled laboratory environments
 
 «Educational Purpose Only.»
@@ -29,16 +31,26 @@ The project is intended for:
 
 🧩 Supported Architectures
 
-Architecture| Support
+<div align="center">Architecture| Status
 🖥️ x86_64| ✅ Supported
 🖥️ x86| ✅ Supported
 📱 ARM64| ✅ Supported
 
-NOOR-404
-   │
-   ├── x86_64
-   ├── x86
-   └── ARM64
+</div>                    ┌─────────────────┐
+                    │     NOOR-404    │
+                    │ Security Research
+                    └────────┬────────┘
+                             │
+             ┌───────────────┼───────────────┐
+             │               │               │
+             ▼               ▼               ▼
+        ┌─────────┐     ┌─────────┐     ┌─────────┐
+        │  x86    │     │ x86_64  │     │ ARM64   │
+        └─────────┘     └─────────┘     └─────────┘
+             │               │               │
+             └───────────────┼───────────────┘
+                             ▼
+                    Android Test Environment
 
 ---
 
@@ -46,95 +58,99 @@ NOOR-404
 
 Android
 
-The project is designed around Android security research and multi-architecture testing environments.
+The project is designed for studying Android application security across multiple CPU architectures.
 
 ---
 
-🔐 SSL Pinning
+🔐 SSL / TLS Research
 
-SSL certificate pinning is a security mechanism that allows an application to restrict which certificates or public keys it trusts when establishing a TLS connection.
+SSL/TLS provides encrypted communication between an application and a server.
 
-Researching pinning can help developers and security researchers understand:
+Certificate pinning adds another layer of trust validation by restricting which certificates or public keys an application accepts.
 
-- Certificate validation
-- TLS communication
-- Trust stores
-- Public-key pinning
-- Android Network Security Configuration
-- Native security implementations
-- Runtime instrumentation
-- Application hardening
+This project can be used to study:
+
+- 🔒 TLS connections
+- 📜 Certificates
+- 🔗 Certificate chains
+- 📌 Certificate pinning
+- 🛡️ Trust validation
+- ⚙️ Network Security Configuration
+- 🧩 Native ".so" libraries
+- 🔎 Runtime security mechanisms
 
 ---
 
-📂 Native Library Research
+📂 Native Library
 
-For an authorized test build, a native library may reside inside the application's private native-library directory.
+For an authorized test application/build, a native library may be located inside the application's private native-library directory.
 
-Example structure:
+Example:
 
 /data/data/<your.test.package>/lib-compressed/libcoldstart.so
 
-Example library
+Library
 
 libcoldstart.so
 
-Example directory
+Directory
 
 /data/data/<your.test.package>/lib-compressed/
 
-«The exact location can differ depending on the Android version, application build, packaging method, and runtime environment.»
+«The exact path may vary depending on the Android version, application build, packaging configuration, and runtime environment.»
 
 ---
 
-🔧 ADB Deployment — Authorized Test Builds
+🔧 ADB — Authorized Test Environment
 
-For an application that you own or have explicit permission to modify, the general ADB file-deployment pattern is:
+For an application that you own or are explicitly authorized to test, the general ADB deployment format is:
 
 adb push [Patched-libcoldstart.so-Path] /data/data/<your.test.package>/lib-compressed/libcoldstart.so
 
-Where:
+Path Structure
 
 [Patched-libcoldstart.so-Path]
-        │
-        ▼
-Your authorized test library
-        │
-        ▼
+             │
+             ▼
+      libcoldstart.so
+             │
+             ▼
 /data/data/<your.test.package>/
-        │
-        └── lib-compressed/
-              └── libcoldstart.so
+             │
+             └── lib-compressed/
+                     │
+                     └── libcoldstart.so
 
-⚠️ Note
-
-Private application directories are protected by Android's permission and sandboxing model. ADB access to these locations may require an appropriate authorized test environment, such as a debuggable development build or emulator.
+«Android's application sandbox and file permissions may prevent direct access to private application directories. Use an appropriate debug/emulator/test environment.»
 
 ---
 
-🧪 Recommended Research Environment
+🧪 Research Environment
 
-For legitimate security research, use:
+Recommended environment:
 
-Android Emulator
-      │
-      ├── x86_64
-      ├── x86
-      └── ARM64
-            │
-            ▼
-      Test Application
-            │
-            ▼
-      TLS / SSL Analysis
+Android
+   │
+   ├── x86
+   │
+   ├── x86_64
+   │
+   └── ARM64
+          │
+          ▼
+   Authorized Test Build
+          │
+          ▼
+   TLS / SSL Research
 
-Recommended targets include:
+Suitable targets include:
 
-- Your own Android application
-- A dedicated security-testing APK
-- A deliberately vulnerable lab application
-- Development/debug builds
-- Applications for which you have written authorization
+✔ Your own application
+✔ Your own debug build
+✔ Authorized security-testing target
+✔ Dedicated laboratory APK
+✔ Deliberately vulnerable test application
+✔ Android emulator
 
 ---
 
@@ -142,62 +158,76 @@ Recommended targets include:
 
 Android Security
 
-Study application sandboxing, permissions, package structure, and native libraries.
+Study:
+
+- Application sandboxing
+- Permissions
+- APK structure
+- Native libraries
+- Runtime behavior
 
 TLS / SSL
 
-Understand HTTPS connections, certificates, certificate chains, and trust validation.
+Study:
+
+- HTTPS
+- TLS handshakes
+- Certificates
+- Trust stores
+- Certificate validation
 
 Certificate Pinning
 
-Study how applications restrict trusted certificates or public keys.
+Study how applications restrict trusted certificates or public keys and how developers can test their own implementations.
 
 Native Libraries
 
-Analyze how native ".so" libraries are packaged and loaded by Android applications.
+Study:
 
-Multi-Architecture Support
-
-Test application behavior across:
-
-x86_64
-x86
-ARM64
+.so
+│
+├── ELF structure
+├── Architecture
+├── Native code
+└── Runtime loading
 
 ---
 
 🛡️ Defensive Security
 
-The same research can be used to improve application security.
+The knowledge gained from this research can also be used to improve Android application security.
 
-Developers can investigate:
+Recommended areas of study:
 
-- TLS configuration
-- Certificate validation
+- Strong TLS configuration
+- Proper certificate validation
 - Certificate pinning
-- Root/instrumentation detection
-- Native-code protections
-- Network Security Configuration
 - Secure key management
+- Network Security Configuration
 - Runtime tampering detection
+- Root/instrumentation detection
+- Native-code hardening
 
 ---
 
-📁 Example Project Structure
+📁 Repository Structure
 
 NOOR-404/
 │
 ├── README.md
 │
-├── research/
-│   ├── android/
-│   ├── tls/
-│   └── ssl-pinning/
+├── assets/
+│   └── banner.png
 │
 ├── architectures/
 │   ├── x86/
 │   ├── x86_64/
 │   └── arm64/
+│
+├── research/
+│   ├── android/
+│   ├── tls/
+│   └── ssl-pinning/
 │
 └── docs/
     └── security-research.md
@@ -206,59 +236,85 @@ NOOR-404/
 
 ⚙️ Architecture Matrix
 
-Component| x86| x86_64| ARM64
-Android testing| ✅| ✅| ✅
-Native ".so" research| ✅| ✅| ✅
-TLS/SSL research| ✅| ✅| ✅
-Emulator testing| ✅| ✅| —
-Physical-device testing| —| —| ✅
+<div align="center">Component| x86| x86_64| ARM64
+Android Testing| ✅| ✅| ✅
+Native ".so" Research| ✅| ✅| ✅
+TLS / SSL Research| ✅| ✅| ✅
+Emulator Testing| ✅| ✅| —
+Physical Device Testing| —| —| ✅
 
----
+</div>---
 
 🎯 Educational Objectives
 
 The project aims to help researchers understand:
 
-1. How TLS connections are established.
-2. How Android validates certificates.
-3. How certificate pinning works.
-4. How native ".so" libraries are loaded.
-5. How Android application sandboxing works.
-6. How different CPU architectures affect native code.
-7. How developers can harden applications against tampering.
+01 ── TLS / SSL
+02 ── Certificate Validation
+03 ── Certificate Pinning
+04 ── Android Network Security
+05 ── Native .so Libraries
+06 ── Android Application Sandboxing
+07 ── Multi-Architecture Analysis
+08 ── Application Hardening
+
+---
+
+📚 Learning Flow
+
+        Android Application
+                │
+                ▼
+          HTTPS / TLS
+                │
+                ▼
+      Certificate Validation
+                │
+                ▼
+       Certificate Pinning
+                │
+                ▼
+        Native Components
+                │
+                ▼
+       Security Analysis
+                │
+                ▼
+       Defensive Hardening
 
 ---
 
 ⚠️ Responsible Use
 
-Use this project only in environments where you have authorization.
+This project should only be used where you have permission.
 
-✅ Allowed Research Targets
+✅ Authorized
 
-✔ Your own application
-✔ Your own test build
-✔ Authorized penetration-testing target
-✔ Security laboratory
-✔ Android emulator
-✔ Deliberately vulnerable application
+✔ Own applications
+✔ Own development builds
+✔ Authorized penetration tests
+✔ Security laboratories
+✔ Test APKs
+✔ Android emulators
 
-❌ Do Not Use For
+❌ Unauthorized
 
-✘ Unauthorized account access
+✘ Account compromise
 ✘ Credential theft
-✘ Intercepting private communications
-✘ Circumventing security without authorization
-✘ Modifying third-party applications without permission
+✘ Private communication interception
+✘ Unauthorized application modification
+✘ Unauthorized security bypass
+✘ Privacy violations
 
 ---
 
 📜 Disclaimer
 
-NOOR-404 — Educational Purpose Only
+<div align="center">⚠️ EDUCATIONAL PURPOSE ONLY ⚠️
 
-This project is intended solely for education, security research, debugging, and authorized testing.
+</div>NOOR-404 is intended for education, security research, debugging, and authorized testing.
 
-The author does not encourage unauthorized access, interception of communications, account compromise, credential theft, privacy violations, or circumvention of security controls on systems without permission.
+The project does not encourage unauthorized access, interception of communications, account compromise, credential theft, privacy violations, or circumvention of security controls without permission.
 
 Users are responsible for complying with applicable laws, platform policies, and the authorization provided by the system owner.
 
@@ -268,13 +324,13 @@ Users are responsible for complying with applicable laws, platform policies, and
 
 Android Security Research
 
-"x86_64" • "x86" • "ARM64"
+x86 • x86_64 • ARM64
 
 SSL/TLS • Certificate Pinning • Native Libraries
 
-📚 EDUCATIONAL PURPOSE ONLY
+<br>"EDUCATIONAL PURPOSE ONLY"
 
----
+<br>---
 
 Made for Learning • Research • Authorized Testing
 
