@@ -6,7 +6,7 @@
 
 # 🔐 NOOR-404
 
-### Facebook Android SSL Pinning Research
+### Facebook SSL Pinning Bypass
 
 <p>
   <img src="https://img.shields.io/badge/Android-Security-3DDC84?style=for-the-badge&logo=android&logoColor=white">
