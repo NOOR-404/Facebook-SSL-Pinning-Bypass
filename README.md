@@ -1,4 +1,6 @@
-<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404" width="100%"><br>🔐 FACEBOOK SSL PINNING BYPASS
+<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404 Banner" width="100%"><br><br>
+
+🔐 FACEBOOK SSL PINNING BYPASS
 
 Android SSL/TLS Security Research
 
@@ -8,7 +10,7 @@ Android SSL/TLS Security Research
   <img src="https://img.shields.io/badge/x86-Supported-00C853?style=for-the-badge">
   <img src="https://img.shields.io/badge/x86__64-Supported-00C853?style=for-the-badge">
 </p><p>
-  <b>SSL/TLS Research • Native Analysis • Android Reverse Engineering</b>
+  <b>Native Analysis • SSL/TLS Research • Android Reverse Engineering</b>
 </p><p>
   <img src="https://img.shields.io/badge/Purpose-Education-1976D2?style=flat-square">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
@@ -16,26 +18,27 @@ Android SSL/TLS Security Research
 
 📌 About
 
-FACEBOOK SSL PINNING BYPASS is an Android security-research project created by NOOR-404 for educational purposes.
+FACEBOOK SSL PINNING BYPASS is an Android security-research project by NOOR-404, created for educational purposes.
 
-The project focuses on studying:
+The project focuses on understanding Android application security, SSL/TLS certificate validation, certificate-pinning concepts, native libraries, and reverse-engineering workflows in controlled and authorized environments.
 
-- 🔐 SSL/TLS certificate validation
-- 🧩 SSL certificate pinning concepts
-- 📱 Android application security
-- 🔬 Native ".so" library analysis
-- 🛠️ Reverse-engineering techniques
-- 🖥️ Emulator and device testing
-- ⚡ Multi-architecture native libraries
+✨ Highlights
 
-«🎓 Education Purpose: This project is intended for learning, research, and authorized security testing in controlled environments.»
+- 🔐 SSL/TLS security research
+- 🔬 Native library analysis
+- 🧩 Certificate-pinning research
+- 📱 Android application analysis
+- 🛠️ Reverse-engineering study
+- 🖥️ Emulator & device testing
+- ⚡ Multi-architecture support
+- 🎓 Education-focused research
 
 ---
 
 🎯 Target Information
 
 Property| Details
-Project| FACEBOOK SSL PINNING BYPASS
+Project| "FACEBOOK SSL PINNING BYPASS"
 Application| Facebook for Android
 Package| "com.facebook.katana"
 Native Library| "libcoldstart.so"
@@ -45,18 +48,34 @@ x86_64| ✅ Supported
 Platform| Android
 Purpose| 🎓 Education / Security Research
 
+«⚠️ Native libraries are build- and version-dependent. Always verify compatibility before using any research binary.»
+
 ---
 
 🧬 Architecture Support
 
-This repository contains architecture-specific native libraries.
+Architecture| Status| Typical Environment
+ARM64-v8a| ✅ Supported| Physical Android Devices
+x86| ✅ Supported| Android Emulators
+x86_64| ✅ Supported| Android Emulators
 
-Architecture| Support| Environment
-ARM64-v8a| ✅| Physical Android Devices
-x86| ✅| Android Emulators
-x86_64| ✅| Android Emulators
+Supported ABI Layout
 
-Supported Structure
+ARM64-v8a
+└── ARM64/
+    └── libcoldstart.so
+
+x86
+└── x86/
+    └── libcoldstart.so
+
+x86_64
+└── x86_64/
+    └── libcoldstart.so
+
+---
+
+📂 Repository Structure
 
 FACEBOOK-SSL-PINNING-BYPASS/
 │
@@ -77,177 +96,193 @@ FACEBOOK-SSL-PINNING-BYPASS/
 
 ---
 
-📂 Native Library
+📱 Application Information
 
-The primary native library used for research is:
+Application : Facebook for Android
+Package     : com.facebook.katana
+Library     : libcoldstart.so
+Platform    : Android
 
-libcoldstart.so
+The native library must match the architecture and compatible application build being studied.
 
-Typical application-private location:
+---
+
+📍 Native Library Location
+
+For the research environment described by this project, the native library may be located at:
 
 /data/data/com.facebook.katana/lib-compressed/libcoldstart.so
 
-Architecture Mapping
-
-ARM64-v8a
-    ↓
-ARM64/libcoldstart.so
-
-x86
-    ↓
-x86/libcoldstart.so
-
-x86_64
-    ↓
-x86_64/libcoldstart.so
-
-«⚠️ Important: Always use a library matching the target application's ABI and compatible application build. Mixing incompatible binaries may cause loading failures or application crashes.»
+«⚠️ The exact location can vary between application versions, installation methods, Android versions, and runtime configurations.»
 
 ---
 
-🧪 Educational Research Environment
+🔬 Research Workflow
 
-A controlled research environment may include:
+┌──────────────────────────┐
+│   Android Test Device    │
+│       / Emulator         │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│   Target Application     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Native Library Analysis  │
+│     libcoldstart.so      │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│     SSL/TLS Research     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Authorized Traffic Study │
+└──────────────────────────┘
 
-Android Emulator / Test Device
-            │
-            ▼
-     Facebook Test APK
-            │
-            ▼
-    Native Library Analysis
-            │
-            ▼
-      SSL/TLS Validation
-            │
-            ▼
-   Authorized Traffic Study
+---
 
-Common research tools include:
+🧪 Research Environment
 
+A controlled Android security-research environment may include:
+
+- Android emulator or test device
+- Authorized test application
+- Matching native library
 - ADB
-- Ghidra
-- IDA
-- MT Manager
-- Reqable
-- Burp Suite
-- HTTP Canary
+- HTTPS inspection proxy
+- Test CA certificate
+- Static-analysis tools
+- Dynamic-analysis tools
+
+Example Tools
+
+Tool| Research Use
+ADB| Android debugging & file management
+Ghidra| Native binary analysis
+IDA| Reverse engineering
+MT Manager| Android file inspection
+Reqable| HTTPS traffic analysis
+Burp Suite| Web/API security testing
+HTTP Canary| Mobile traffic inspection
 
 ---
 
-🔬 Research Topics
+🔐 SSL/TLS Research
 
-Android Security
-
-- Android application architecture
-- Native ELF libraries
-- Application-private directories
-- ABI and architecture differences
-- Native code loading
-
-SSL/TLS
+This project can be used to study concepts such as:
 
 - Certificate validation
 - Certificate pinning
 - Trust chains
-- HTTPS inspection
-- TLS debugging
+- TLS handshakes
+- HTTPS interception
+- Native networking components
+- Android application security controls
 
-Reverse Engineering
-
-- ".so" library analysis
-- ELF structures
-- Native functions
-- Static analysis
-- Dynamic analysis
-- Architecture-specific binaries
+The purpose is to understand how these security mechanisms work rather than to facilitate unauthorized interception.
 
 ---
 
-🖥️ ABI Compatibility
+🛠️ Native Library Research
 
-Supported ABIs:
+The repository separates native libraries by ABI:
 
-┌─────────────────────────────┐
-│       ARCHITECTURES         │
-├─────────────────────────────┤
-│  ✅ ARM64-v8a               │
-│  ✅ x86                     │
-│  ✅ x86_64                  │
-└─────────────────────────────┘
+ARM64/
+└── libcoldstart.so
 
-Use the corresponding directory for the target environment:
+x86/
+└── libcoldstart.so
 
-ARM64 → ARM64/libcoldstart.so
-x86   → x86/libcoldstart.so
-x86_64 → x86_64/libcoldstart.so
+x86_64/
+└── libcoldstart.so
+
+ABI Mapping
+
+Target ABI| Repository Directory
+ARM64-v8a| "ARM64/"
+x86| "x86/"
+x86_64| "x86_64/"
+
+Using a binary compiled for a different ABI can cause library-loading failures or application crashes.
 
 ---
 
-⚠️ Compatibility
-
-Native Android libraries are highly dependent on:
-
-- Application version
-- Application build
-- ABI
-- Native dependencies
-- Runtime environment
-
-Therefore:
+⚠️ Compatibility Notes
 
 Application Version
-        +
-Matching ABI
-        +
-Matching Native Build
-        ↓
-Compatible Research Environment
 
-Do not assume that a library from one application release will work correctly with another release.
+If a specific application build is being researched, record the exact version:
+
+Application Version
+        │
+        ▼
+Native Library Version
+        │
+        ▼
+Target ABI
+        │
+        ▼
+Research Environment
+
+Do Not Mix
+
+Avoid mixing libraries between:
+
+Different Application Versions
+Different Builds
+Different ABIs
+Different Native Dependencies
+
+A native library compatible with one build should not automatically be assumed to work with another.
 
 ---
 
 🎓 Education Purpose
 
-This repository is published for educational and security-research purposes.
+NOOR-404 provides this repository for:
 
-It can be used to study:
+- 📚 Android security education
+- 🔬 SSL/TLS research
+- 🧩 Native-library study
+- 🛠️ Reverse-engineering learning
+- 🖥️ Emulator research
+- 🧪 Authorized application testing
 
-- How Android applications implement TLS security
-- How certificate validation works
-- How native libraries participate in application security
-- How ABI differences affect native Android applications
-- How security researchers analyze native binaries
-
-«📚 The goal is to improve understanding of Android application security and reverse engineering.»
+«Education Purpose: The project is intended to help researchers and students understand Android security mechanisms in controlled environments.»
 
 ---
 
 🛡️ Responsible Use
 
-Use this project only in environments where you have appropriate authorization.
+Use this repository only when you have appropriate authorization to analyze or modify the application and environment.
 
-Do not use it for:
+Do not use the project for:
 
 - Unauthorized traffic interception
 - Credential collection
 - Session theft
 - Account compromise
 - Privacy violations
+- Unauthorized access
 - Circumventing security controls on systems you do not own or have permission to test
 
-Always follow applicable laws, regulations, and service terms.
+Always comply with applicable laws, regulations, and service terms.
 
 ---
 
-⚠️ Disclaimer
+📜 Disclaimer
 
-NOOR-404 provides this project strictly for education, research, and authorized security testing.
+This project is provided by NOOR-404 strictly for educational and authorized security-research purposes.
 
-The author does not encourage unauthorized modification, interception, or analysis of third-party applications or user traffic.
+The author does not encourage unauthorized modification, interception, or analysis of third-party applications, accounts, or user traffic.
 
-You are solely responsible for how you use the materials contained in this repository.
+You are responsible for ensuring that your use of this repository complies with applicable laws, regulations, and service terms.
 
 ---
 
@@ -257,14 +292,18 @@ You are solely responsible for how you use the materials contained in this repos
 
 🔐 FACEBOOK SSL PINNING BYPASS
 
-Education • Android Security • Reverse Engineering
+Android Security • SSL/TLS Research • Reverse Engineering
 
 <br><img src="https://img.shields.io/badge/ARM64-✓-00C853?style=flat-square">
 <img src="https://img.shields.io/badge/x86-✓-00C853?style=flat-square">
 <img src="https://img.shields.io/badge/x86__64-✓-00C853?style=flat-square"><br><br>
 
-🎓 Education Purpose Only
+🎓 EDUCATION PURPOSE
 
 <br>© NOOR-404
 
 </div>---
+
+<div align="center">🔐 Android Security Research • 📱 Native Analysis • 🎓 Education
+
+</div>
