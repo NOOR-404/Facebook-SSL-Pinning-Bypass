@@ -1,141 +1,171 @@
-<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404 Facebook SSL Pinning Research" width="100%"/><br/>🛡️ NOOR-404
+<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404" width="100%"><br><br>
 
-Facebook Android SSL Pinning Research
+🔐 NOOR-404
 
-"Native Library Analysis" • "x86" • "Android Security Research"
+Facebook Android SSL Pinning — x86 Research
 
-<br/>"Architecture" (https://img.shields.io/badge/Architecture-x86-00C853?style=flat-square&logo=android&logoColor=white)
-"Platform" (https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-"Root" (https://img.shields.io/badge/Root-Required-E53935?style=flat-square)
-"License" (https://img.shields.io/badge/License-MIT-1976D2?style=flat-square)
+<p>
+  <img src="https://img.shields.io/badge/Architecture-x86-00C853?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
+  <img src="https://img.shields.io/badge/Root-Required-E53935?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-1976D2?style=for-the-badge">
+</p><p>
+  <b>Native Library Analysis • Binary Patching • HTTPS Research</b>
+</p></div>---
 
-</div>---
+📌 About
 
-🔎 Project Overview
+NOOR-404 is an Android security-research project focused on studying SSL/TLS certificate validation, native libraries, and HTTPS traffic interception in a controlled testing environment.
 
-NOOR-404 is an Android security-research project focused on studying SSL/TLS certificate validation and native-library behavior inside the Facebook Android application.
+This repository contains an x86 research build of:
 
-The project provides a research-oriented patched "libcoldstart.so" for the specified application version and x86 architecture, allowing authorized researchers to study HTTPS traffic interception in a controlled environment.
+libcoldstart.so
 
-«Research Project: Use only with applications, devices, accounts, and traffic that you own or have explicit permission to test.»
+for the specified Facebook Android application version.
+
+«⚠️ Use this project only on applications, devices, accounts, and network traffic that you own or are explicitly authorized to test.»
 
 ---
 
-📋 Target Information
+🎯 Target Information
 
-Property| Details
+Property| Value
 Project| NOOR-404
-Target App| Facebook
+GitHub| NOOR-404
+Application| Facebook
 Package| "com.facebook.katana"
-Test Version| "555.0.0.49.59"
+Version| "555.0.0.49.59"
 Architecture| "x86"
 Library| "libcoldstart.so"
-Technique| Native binary patching
-Environment| Rooted Android / Android Emulator
-
-«⚠️ The patched library is intended for the exact application version and architecture listed above.»
+Environment| Rooted Android Emulator
+Purpose| Security Research
 
 ---
 
-📁 Repository Layout
+📂 Repository Structure
 
 NOOR-404/
 │
-├── assets/
-│   └── banner.jpg
-│
 ├── x86/
 │   └── libcoldstart.so
+│
+├── assets/
+│   └── banner.jpg
 │
 └── README.md
 
 ---
 
-📥 x86 Resources
+📦 x86 Build
 
-Native Library
+"libcoldstart.so"
 
-Architecture: "x86"
+Architecture:
+
+x86
+
+Library:
 
 x86/libcoldstart.so
 
-Download the corresponding "libcoldstart.so" from the repository's x86 directory.
+The repository intentionally contains x86 only.
 
-Facebook APK
+Supported Architecture
 
-Use the corresponding Facebook release:
+✅ x86
 
-Package: com.facebook.katana
-Version: 555.0.0.49.59
-Architecture: x86
-DPI: nodpi
-APK: standalone APK
+❌ ARM64
+❌ ARMv7
+❌ x86_64
 
 ---
 
-🧪 Research Environment
+📱 Target Application
 
-Recommended setup:
+Package:
+com.facebook.katana
 
-Android Emulator
-       │
-       ├── Root Access
-       │
-       ├── Facebook
-       │
-       ├── Patched libcoldstart.so
-       │
-       └── HTTPS Proxy
-              │
-              └── Traffic Analysis
+Version:
+555.0.0.49.59
 
-Suitable research environments include rooted Android emulators where the researcher controls the application installation and network configuration.
+Architecture:
+x86
+
+APK Type:
+Standalone APK
+
+DPI:
+nodpi
+
+«⚠️ The native library is version-specific. Do not assume that a library built for this release will work with another Facebook release.»
 
 ---
 
-⚙️ Installation
+🧪 Research Setup
 
-01 — Prepare the Environment
+A typical controlled test environment:
 
-Install the matching Facebook APK and make sure the emulator/device is running the x86 architecture.
+┌──────────────────────────────┐
+│          NOOR-404             │
+│       Security Research      │
+├──────────────────────────────┤
+│                              │
+│     Android x86 Emulator     │
+│              │               │
+│              ▼               │
+│          Facebook            │
+│              │               │
+│              ▼               │
+│      libcoldstart.so         │
+│              │               │
+│              ▼               │
+│       HTTPS Inspection       │
+│                              │
+└──────────────────────────────┘
 
-Confirm the package:
+---
+
+⚙️ Setup
+
+1. Install the Matching APK
+
+Install the Facebook version specified above in your controlled x86 Android environment.
+
+Verify the package:
 
 com.facebook.katana
 
 ---
 
-02 — Backup the Original Library
+2. Backup the Original Library
 
-Before making any modification, create a backup of the original native library.
+Before replacing anything, make a backup of the original native library.
 
-Typical location:
+Expected location:
 
 /data/data/com.facebook.katana/lib-compressed/libcoldstart.so
 
-Keep the original file somewhere safe so the application can be restored later.
+Keep the original copy so that the application can be restored if necessary.
 
 ---
 
-03 — Replace the Research Library
+3. Replace the Library
 
-Replace the original:
-
-libcoldstart.so
-
-with the corresponding research build from:
+Use the corresponding file:
 
 x86/libcoldstart.so
 
-The replacement should only be performed on an installation that you are authorized to modify.
+and replace the original library inside the authorized test environment.
+
+«Make sure the application is completely stopped before modifying its native library.»
 
 ---
 
-04 — Configure HTTPS Inspection
+4. Configure Your HTTPS Research Tool
 
-For an authorized test environment, configure your preferred HTTPS inspection tool and install its CA certificate according to the tool's official documentation.
+For authorized testing, configure your preferred HTTPS inspection tool and install its CA certificate in accordance with the tool's documentation.
 
-Possible research tools include:
+Examples:
 
 Reqable
 Burp Suite
@@ -143,87 +173,84 @@ HTTP Canary
 
 ---
 
-05 — Start Traffic Analysis
+5. Start Testing
 
-Start the HTTPS inspection session and launch the test application.
+Start the proxy/inspection tool and launch Facebook inside your controlled environment.
 
-Perform normal test actions inside the authorized environment and inspect the resulting network requests.
+Perform test actions and inspect the resulting network traffic.
 
 ---
 
-🧩 Why "libcoldstart.so"?
+🔬 Research Topics
 
-Facebook uses native Android components as part of its application runtime.
+This project can be used to study:
 
-Studying native libraries such as:
-
-libcoldstart.so
-
-can help security researchers understand:
-
-- Native certificate-validation flows
-- Android TLS implementation
+- SSL/TLS certificate validation
+- Certificate pinning concepts
+- Android native libraries
+- ELF binary structure
+- ARM/x86 architecture differences
+- Native code analysis
 - Binary patching concepts
-- Runtime behavior of native libraries
-- HTTPS interception techniques
-- Application security controls
-
-This repository is intended as a learning and research reference.
+- HTTPS traffic inspection
+- Android application security
 
 ---
 
-🖥️ x86 Emulator Focus
+🧱 Library Information
 
-This repository intentionally contains x86 only.
-
-┌──────────────────────────────┐
-│          NOOR-404             │
-├──────────────────────────────┤
-│                              │
-│  Architecture : x86          │
-│  Platform     : Android      │
-│  Target       : Facebook     │
-│  Library      : libcoldstart │
-│                              │
-└──────────────────────────────┘
-
-ARM64, ARMv7, and x86_64 builds are intentionally not included in this version.
+┌─────────────────────────────────┐
+│          LIBRARY INFO           │
+├─────────────────────────────────┤
+│                                 │
+│ Name      : libcoldstart.so     │
+│ Arch      : x86                 │
+│ Package   : com.facebook.katana │
+│ Version   : 555.0.0.49.59       │
+│                                 │
+└─────────────────────────────────┘
 
 ---
 
-⚠️ Important Notes
+⚠️ Important
 
-Version Matching
+Version Compatibility
 
-The library is tied to a specific Facebook release.
+The provided library corresponds to:
 
-Facebook: 555.0.0.49.59
-Architecture: x86
+Facebook 555.0.0.49.59
 
-Using a library from a different application version or architecture may cause the application to malfunction or fail to load.
+Using an incompatible version may cause:
 
-Root Requirement
+- Application crashes
+- Library loading failures
+- Unexpected behavior
+- Failed initialization
 
-Access to the application's private native-library directory generally requires an appropriately controlled/rooted test environment.
+Root Access
+
+The described library replacement requires an appropriately controlled/rooted Android environment because application-private directories are normally protected.
 
 Backup
 
-Always keep the original library before performing any modification.
+Always preserve the original library before modification.
 
 ---
 
-🔐 Responsible Security Research
+🛡️ Responsible Use
 
-NOOR-404 is intended for:
+NOOR-404 is intended for legitimate security research and educational purposes.
 
-- Android security research
-- Reverse-engineering education
-- Native-library analysis
-- Controlled HTTPS testing
-- Application security testing
-- Learning about certificate pinning
+Use it only when you have authorization to test the application or traffic involved.
 
-Do not use this project to intercept traffic, credentials, sessions, or data belonging to other users or services without authorization.
+Do not use this project for:
+
+- Unauthorized traffic interception
+- Credential theft
+- Session/token collection
+- Account compromise
+- Privacy violations
+- Unauthorized application modification
 
 ---
 
@@ -231,42 +258,31 @@ Do not use this project to intercept traffic, credentials, sessions, or data bel
 
 This repository is provided for educational and authorized security-research purposes only.
 
-The author does not encourage unauthorized interception, credential collection, account compromise, or modification of applications that you do not own or have permission to test.
+The author is not responsible for misuse of this material or for damage resulting from unauthorized modification, interception, or testing.
 
-You are solely responsible for complying with applicable laws, terms of service, and authorization requirements when using this material.
-
----
-
-🧰 Custom Research Work
-
-Need a custom Android security-research project?
-
-• Android native-library analysis
-• Application security research
-• Authorized SSL/TLS testing
-• Reverse-engineering assistance
-• Python automation projects
-• Android research tooling
-
-Contact:
-
-NOOR-404
+By using this project, you accept responsibility for complying with applicable laws, regulations, and service terms.
 
 ---
 
-📡 Contact
+👤 Project
 
 <div align="center">NOOR-404
 
-"Security Research • Reverse Engineering • Android"
+Android Security Research
 
-<br/>"Facebook" (https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)
-"WhatsApp" (https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-"Telegram" (https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
+"Reverse Engineering • Native Analysis • Android Research"
 
-<br/><br/>
+<br><a href="https://github.com/NOOR-404">
+  <img src="https://img.shields.io/badge/GitHub-NOOR--404-181717?style=for-the-badge&logo=github&logoColor=white">
+</a><br><br>
 
 NOOR-404
-Android Security Research
+Security Research & Development
+
+</div>---
+
+<div align="center">⭐ If this research project is useful to you, consider starring the repository.
+
+NOOR-404 © All rights reserved.
 
 </div>
