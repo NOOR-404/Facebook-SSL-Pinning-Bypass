@@ -1,393 +1,281 @@
-<div align="center">
+<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" width="100%" alt="NOOR-404">🔐 FACEBOOK SSL PINNING BYPASS
 
-<img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" alt="NOOR-404 Animated Header" width="100%">
+"NOOR-404"
 
-<br><br>
+📚 Educational Purpose Only
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=900&color=00FF88&center=true&vCenter=true&width=850&lines=NOOR-404;Android+Security+Research;SSL%2FTLS+%7C+Native+Analysis;ARM64+%7C+x86+%7C+x86_64;Reverse+Engineering+Research" alt="NOOR-404 Typing Animation">
+""Architecture" (https://img.shields.io/badge/Architecture-x86__64%20%7C%20x86%20%7C%20ARM64-blue?style=for-the-badge)" (#-supported-architectures)
+""Platform" (https://img.shields.io/badge/Platform-Android-green?style=for-the-badge)" (#-platform)
+""Purpose" (https://img.shields.io/badge/Purpose-Education-orange?style=for-the-badge)" (#-disclaimer)
 
-<br><br>
+</div>---
 
-<img src="https://img.shields.io/badge/⚡_STATUS-ONLINE-00C853?style=for-the-badge&labelColor=101010">
-<img src="https://img.shields.io/badge/ANDROID-SECURITY-3DDC84?style=for-the-badge&logo=android&logoColor=white">
-<img src="https://img.shields.io/badge/ARM64-SUPPORTED-00C853?style=for-the-badge">
-<img src="https://img.shields.io/badge/x86-SUPPORTED-00C853?style=for-the-badge">
-<img src="https://img.shields.io/badge/x86__64-SUPPORTED-00C853?style=for-the-badge">
+📖 About
 
-<br><br>
+NOOR-404 Facebook SSL Pinning Bypass is an Android security-research project focused on understanding SSL/TLS certificate validation, certificate pinning, native libraries, and Android network-security mechanisms.
 
-<img src="https://img.shields.io/github/stars/NOOR-404?style=for-the-badge&logo=github&label=STARS&color=00C853">
-<img src="https://img.shields.io/github/forks/NOOR-404?style=for-the-badge&logo=github&label=FORKS&color=1976D2">
-<img src="https://img.shields.io/github/last-commit/NOOR-404?style=for-the-badge&label=LAST%20UPDATE&color=FF9800">
+The project is intended for:
 
-<br><br>
+- 📚 Educational research
+- 🔬 Android security analysis
+- 🧪 Authorized testing
+- 🛠️ Debugging test builds
+- 🔐 TLS/SSL security research
+- 📱 Controlled laboratory environments
 
-<b>🔬 Native Analysis • 🔐 SSL/TLS Research • 📱 Android Security</b>
-
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00FF88&section=header" width="90%">
-
-</div>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
-</p>
+«Educational Purpose Only.»
 
 ---
 
-## 📌 About
+🧩 Supported Architectures
 
-**NOOR-404** is an Android security-research project focused on understanding SSL/TLS certificate validation, native Android libraries, and application security mechanisms.
+Architecture| Support
+🖥️ x86_64| ✅ Supported
+🖥️ x86| ✅ Supported
+📱 ARM64| ✅ Supported
 
-The project is designed for controlled research environments where the researcher has authorization to inspect and modify the target application.
-
-### ✨ Highlights
-
-- 🔬 Native library research
-- 🔐 SSL/TLS security analysis
-- 🧩 Binary patching research
-- 📱 Android application analysis
-- 🖥️ Emulator & physical-device testing
-- ⚡ Multi-architecture support
-- 🛠️ Reverse-engineering research
+NOOR-404
+   │
+   ├── x86_64
+   ├── x86
+   └── ARM64
 
 ---
 
-## 🎯 Target Information
+📱 Platform
 
-| Property | Details |
-|:--|:--|
-| **Project** | NOOR-404 |
-| **Application** | Facebook |
-| **Package** | `com.facebook.katana` |
-| **Test Version** | `555.0.0.49.59` |
-| **Native Library** | `libcoldstart.so` |
-| **ARM64** | ✅ Supported |
-| **x86** | ✅ Supported |
-| **x86_64** | ✅ Supported |
-| **Environment** | Android / Emulator |
-| **Purpose** | Security Research |
+Android
 
-> ⚠️ Native libraries are version-dependent. A library built for one application release should not be assumed to work with another release.
+The project is designed around Android security research and multi-architecture testing environments.
 
 ---
 
-## 📂 Repository Structure
+🔐 SSL Pinning
 
-```text
+SSL certificate pinning is a security mechanism that allows an application to restrict which certificates or public keys it trusts when establishing a TLS connection.
+
+Researching pinning can help developers and security researchers understand:
+
+- Certificate validation
+- TLS communication
+- Trust stores
+- Public-key pinning
+- Android Network Security Configuration
+- Native security implementations
+- Runtime instrumentation
+- Application hardening
+
+---
+
+📂 Native Library Research
+
+For an authorized test build, a native library may reside inside the application's private native-library directory.
+
+Example structure:
+
+/data/data/<your.test.package>/lib-compressed/libcoldstart.so
+
+Example library
+
+libcoldstart.so
+
+Example directory
+
+/data/data/<your.test.package>/lib-compressed/
+
+«The exact location can differ depending on the Android version, application build, packaging method, and runtime environment.»
+
+---
+
+🔧 ADB Deployment — Authorized Test Builds
+
+For an application that you own or have explicit permission to modify, the general ADB file-deployment pattern is:
+
+adb push [Patched-libcoldstart.so-Path] /data/data/<your.test.package>/lib-compressed/libcoldstart.so
+
+Where:
+
+[Patched-libcoldstart.so-Path]
+        │
+        ▼
+Your authorized test library
+        │
+        ▼
+/data/data/<your.test.package>/
+        │
+        └── lib-compressed/
+              └── libcoldstart.so
+
+⚠️ Note
+
+Private application directories are protected by Android's permission and sandboxing model. ADB access to these locations may require an appropriate authorized test environment, such as a debuggable development build or emulator.
+
+---
+
+🧪 Recommended Research Environment
+
+For legitimate security research, use:
+
+Android Emulator
+      │
+      ├── x86_64
+      ├── x86
+      └── ARM64
+            │
+            ▼
+      Test Application
+            │
+            ▼
+      TLS / SSL Analysis
+
+Recommended targets include:
+
+- Your own Android application
+- A dedicated security-testing APK
+- A deliberately vulnerable lab application
+- Development/debug builds
+- Applications for which you have written authorization
+
+---
+
+🔬 Research Areas
+
+Android Security
+
+Study application sandboxing, permissions, package structure, and native libraries.
+
+TLS / SSL
+
+Understand HTTPS connections, certificates, certificate chains, and trust validation.
+
+Certificate Pinning
+
+Study how applications restrict trusted certificates or public keys.
+
+Native Libraries
+
+Analyze how native ".so" libraries are packaged and loaded by Android applications.
+
+Multi-Architecture Support
+
+Test application behavior across:
+
+x86_64
+x86
+ARM64
+
+---
+
+🛡️ Defensive Security
+
+The same research can be used to improve application security.
+
+Developers can investigate:
+
+- TLS configuration
+- Certificate validation
+- Certificate pinning
+- Root/instrumentation detection
+- Native-code protections
+- Network Security Configuration
+- Secure key management
+- Runtime tampering detection
+
+---
+
+📁 Example Project Structure
+
 NOOR-404/
 │
-├── ARM64/
-│   └── libcoldstart.so
+├── README.md
 │
-├── x86/
-│   └── libcoldstart.so
+├── research/
+│   ├── android/
+│   ├── tls/
+│   └── ssl-pinning/
 │
-├── x86_64/
-│   └── libcoldstart.so
+├── architectures/
+│   ├── x86/
+│   ├── x86_64/
+│   └── arm64/
 │
-├── assets/
-│   └── banner.jpg
-│
-├── .gitignore
-├── LICENSE
-└── README.md
-```
+└── docs/
+    └── security-research.md
 
 ---
 
-## 🧬 Architecture Support
+⚙️ Architecture Matrix
 
-| Architecture | Status | Typical Environment |
-|:--|:--:|:--|
-| **ARM64-v8a** | ✅ | Physical Android Devices |
-| **x86** | ✅ | Android Emulators |
-| **x86_64** | ✅ | Android Emulators |
-
-### Library Layout
-
-```text
-ARM64/
-└── libcoldstart.so
-
-x86/
-└── libcoldstart.so
-
-x86_64/
-└── libcoldstart.so
-```
+Component| x86| x86_64| ARM64
+Android testing| ✅| ✅| ✅
+Native ".so" research| ✅| ✅| ✅
+TLS/SSL research| ✅| ✅| ✅
+Emulator testing| ✅| ✅| —
+Physical-device testing| —| —| ✅
 
 ---
 
-## 📱 Application Compatibility
+🎯 Educational Objectives
 
-```text
-Package
-com.facebook.katana
+The project aims to help researchers understand:
 
-Version
-555.0.0.49.59
-
-Library
-libcoldstart.so
-```
-
-The architecture of the library must match the architecture used by the target application environment.
+1. How TLS connections are established.
+2. How Android validates certificates.
+3. How certificate pinning works.
+4. How native ".so" libraries are loaded.
+5. How Android application sandboxing works.
+6. How different CPU architectures affect native code.
+7. How developers can harden applications against tampering.
 
 ---
 
-## 🧪 Research Environment
+⚠️ Responsible Use
 
-A typical authorized testing environment may contain:
+Use this project only in environments where you have authorization.
 
-- Rooted Android device or emulator
-- Matching Facebook APK
-- Architecture-compatible native library
-- HTTPS inspection proxy
-- Configured test CA certificate
-- ADB / Android file-management tools
+✅ Allowed Research Targets
 
-Example workflow:
+✔ Your own application
+✔ Your own test build
+✔ Authorized penetration-testing target
+✔ Security laboratory
+✔ Android emulator
+✔ Deliberately vulnerable application
 
-```text
-Android Environment
-        │
-        ▼
-Target Application
-        │
-        ▼
-Native Library
-        │
-        ▼
-TLS / Certificate Validation
-        │
-        ▼
-Authorized Traffic Analysis
-```
+❌ Do Not Use For
+
+✘ Unauthorized account access
+✘ Credential theft
+✘ Intercepting private communications
+✘ Circumventing security without authorization
+✘ Modifying third-party applications without permission
 
 ---
 
-## ⚙️ Research Setup
+📜 Disclaimer
 
-### 01 — Prepare the Application
+NOOR-404 — Educational Purpose Only
 
-Install the compatible application version in your authorized testing environment.
+This project is intended solely for education, security research, debugging, and authorized testing.
 
-Confirm:
+The author does not encourage unauthorized access, interception of communications, account compromise, credential theft, privacy violations, or circumvention of security controls on systems without permission.
 
-```text
-Package: com.facebook.katana
-Version: 555.0.0.49.59
-```
+Users are responsible for complying with applicable laws, platform policies, and the authorization provided by the system owner.
 
 ---
 
-### 02 — Identify the Architecture
+<div align="center">🔐 NOOR-404
 
-Select the library corresponding to the environment:
+Android Security Research
 
-```text
-ARM64-v8a  →  ARM64/libcoldstart.so
+"x86_64" • "x86" • "ARM64"
 
-x86        →  x86/libcoldstart.so
+SSL/TLS • Certificate Pinning • Native Libraries
 
-x86_64     →  x86_64/libcoldstart.so
-```
-
-Using the wrong architecture can result in library-loading errors or application crashes.
+📚 EDUCATIONAL PURPOSE ONLY
 
 ---
 
-### 03 — Preserve the Original Library
-
-Before modifying the application, create a backup of the original native library.
-
-Typical location:
-
-```text
-/data/data/com.facebook.katana/lib-compressed/libcoldstart.so
-```
-
-Keeping the original file makes it easier to restore the application.
-
----
-
-### 04 — Configure Traffic Analysis
-
-For an authorized security test, configure an HTTPS inspection tool such as:
-
-```text
-Reqable
-Burp Suite
-HTTP Canary
-```
-
-Install and configure the appropriate CA certificate according to the tool's documentation.
-
----
-
-### 05 — Analyze the Test Traffic
-
-Start the inspection environment and perform normal actions inside the authorized test account/environment.
-
-Use the captured requests to study:
-
-- TLS connections
-- Certificate validation
-- HTTP/HTTPS behavior
-- Native networking components
-- Application security controls
-
----
-
-## 🔬 Research Areas
-
-### Android Security
-
-- Android application architecture
-- Native `.so` libraries
-- Application-private libraries
-- Rooted test environments
-
-### SSL/TLS
-
-- Certificate validation
-- Certificate pinning concepts
-- Trust chains
-- HTTPS interception
-- TLS debugging
-
-### Reverse Engineering
-
-- ELF binaries
-- Native code analysis
-- Architecture differences
-- Binary patching concepts
-- Dynamic behavior analysis
-
----
-
-## 🖥️ Emulator Support
-
-The repository supports:
-
-```text
-x86
-x86_64
-```
-
-For physical Android hardware:
-
-```text
-ARM64-v8a
-```
-
-Always use the native library that corresponds to the application's active ABI.
-
----
-
-## 🛠️ Tools
-
-Common tools for an authorized research environment:
-
-| Tool | Purpose |
-|:--|:--|
-| **ADB** | Android debugging & file management |
-| **MT Manager** | Android file inspection |
-| **Reqable** | HTTPS traffic analysis |
-| **Burp Suite** | Web/API security testing |
-| **HTTP Canary** | Mobile traffic inspection |
-| **Ghidra** | Native binary analysis |
-| **IDA** | Reverse engineering |
-
----
-
-## ⚠️ Compatibility Notes
-
-### Version
-
-Current research target:
-
-```text
-555.0.0.49.59
-```
-
-### Architecture
-
-Supported:
-
-```text
-ARM64-v8a
-x86
-x86_64
-```
-
-### Important
-
-Do not mix libraries between:
-
-- Different application versions
-- Different ABIs
-- Different builds
-
-Always verify the target version and architecture before testing.
-
----
-
-## 🛡️ Responsible Use
-
-This repository is intended for:
-
-- Educational research
-- Android security testing
-- Reverse-engineering study
-- Native-library analysis
-- Controlled application testing
-- Authorized HTTPS inspection
-
-Only test applications, devices, accounts, and traffic for which you have permission.
-
-Do not use this project for unauthorized interception, credential collection, session theft, account compromise, or privacy violations.
-
----
-
-## 📜 Disclaimer
-
-This project is provided for educational and authorized security-research purposes only.
-
-The author does not encourage unauthorized modification or interception of third-party applications or user traffic.
-
-You are responsible for complying with applicable laws, regulations, and service terms when using this repository.
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:101010,50:003B2A,100:00C853" width="100%">
-</p>
-
-## 👤 NOOR-404
-
-<div align="center">
-
-<a href="https://github.com/NOOR-404">
-<img src="https://img.shields.io/badge/GitHub-NOOR--404-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<br><br>
-
-**NOOR-404**
-
-`Security Research • Reverse Engineering • Android`
-
-<br>
-
-<img src="https://img.shields.io/badge/ARM64-✓-00C853?style=flat-square">
-<img src="https://img.shields.io/badge/x86-✓-00C853?style=flat-square">
-<img src="https://img.shields.io/badge/x86__64-✓-00C853?style=flat-square">
-
-<br><br>
-
-**© NOOR-404**
+Made for Learning • Research • Authorized Testing
 
 </div>
