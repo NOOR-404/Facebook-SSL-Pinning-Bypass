@@ -1,237 +1,216 @@
-<div align="center"><img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" width="100%" /><br/><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=750&lines=NOOR-404+%7C+Facebook+SSL+Pinning+Research;Native+Library+Analysis+%7C+ARM64+%26+x86_64;libcoldstart.so+%7C+SSL+Analysis+%26+Research" alt="NOOR-404 | Facebook SSL Pinning Research" /><br/>"Arch" (https://img.shields.io/badge/Arch-ARM64%20%7C%20x86%20%7C%20x86__64-00FFFF?style=for-the-badge&logo=archlinux&logoColor=00FFFF)
-"Root" (https://img.shields.io/badge/Root-Required-FF003C?style=for-the-badge&logo=android&logoColor=FFFFFF)
-"License" (https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logoColor=00FFFF)
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d1ff&height=200&section=header&text=NOOR-404&fontSize=70&animation=fadeIn" width="100%" />
+  
+  <br/>
+  
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D1FF&center=true&vCenter=true&width=800&lines=>>+Facebook+SSL+Pinning+Research;>>+Native+Library+Analysis;>>+Android+Security+Research;>>+ARM64+%7C+x86_64+Architecture." alt="Typing SVG" />
+  
+  <p align="center">
+    <img src="https://img.shields.io/badge/Status-Active_Research-00FF00?style=for-the-badge&logo=statuspage&logoColor=white" />
+    <img src="https://img.shields.io/badge/Root-Required-FF003C?style=for-the-badge&logo=android&logoColor=white" />
+    <img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logoColor=00FFFF" />
+  </p>
 
-</div>---
+</div>
 
-🔐 NOOR-404
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-Facebook Android SSL Pinning — Native Library Research
+## ⚡ PROJECT_OVERVIEW
 
-NOOR-404 is an Android native-library research project focused on understanding SSL/TLS certificate-pinning mechanisms, native library structures, and security-analysis workflows in Facebook's Android application.
+**NOOR-404** is an advanced native-library research project focused on understanding SSL/TLS certificate-pinning mechanisms, native security implementations, and deep-level analysis workflows in Facebook's Android application.
 
-«⚠️ Research Notice: This project is intended for authorized security research, reverse engineering, debugging, and educational analysis. Only test applications and devices for which you have permission.»
+🔬 **Research Focus:** Native security analysis, certificate validation, and TLS pinning mechanisms.
 
----
+🎯 **Target Application:** Facebook for Android (com.facebook.katana)
 
-📱 Application Information
+⚙️ **Primary Library:** libcoldstart.so (ELF native binary)
 
-Property| Details
-Application| Facebook for Android
-Package Name| "com.facebook.katana"
-Application Version| "YOUR_VERSION_HERE"
-Platform| Android
-Architecture| ARM64 / ARM / x86 / x86_64
-Root| Required for protected application-directory access
-Primary Library| "libcoldstart.so"
-Library Type| Native ELF ".so" library
-Research Area| SSL/TLS & Native Security Analysis
+🏗️ **Architectures:** ARM64 / ARM / x86 / x86_64
 
----
+<p align="center">
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" />
+</p>
 
-📦 Package Information
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-Application Package
+## 📱 APPLICATION_INFO
 
-com.facebook.katana
+| Property | Details |
+|---|---|
+| Application | Facebook for Android |
+| Package Name | `com.facebook.katana` |
+| Application Version | Dynamic (version-dependent) |
+| Platform | Android |
+| Architecture Support | ARM64, ARM, x86, x86_64 |
+| Root Access | Required |
+| Primary Library | `libcoldstart.so` |
+| Library Type | Native ELF ".so" binary |
+| Research Area | SSL/TLS & Native Security |
 
-The package identifier used by the Facebook Android application is:
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-com.facebook.katana
+## 📍 LIBRARY_LOCATION
 
-Native Library
-
-The primary native library examined in this research is:
-
-libcoldstart.so
-
----
-
-📍 Library Location
-
-On installations where the library is stored in Facebook's compressed native-library directory, the relevant path is:
-
+```
 /data/data/com.facebook.katana/lib-compressed/libcoldstart.so
+```
 
-Full Path Breakdown
-
+### Full Path Breakdown
+```
 /data/
 └── data/
     └── com.facebook.katana/
         └── lib-compressed/
             └── libcoldstart.so
+```
 
-«The exact filesystem layout can vary between application versions, Android versions, installation methods, and device configurations.»
+⚠️ **Note:** Filesystem layout varies between versions, Android versions, and installation methods.
 
----
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-🧩 Native Library Details
+## 🧬 ARCHITECTURE_SUPPORT
 
-"libcoldstart.so"
+| Architecture | Status | Notes |
+|---|---|---|
+| ARM64-v8a | ✅ Supported | Modern 64-bit ARM |
+| armeabi-v7a / ARM | ✅ Supported | Legacy 32-bit ARM |
+| x86 | ✅ Supported | 32-bit Intel |
+| x86_64 | ✅ Supported | 64-bit Intel |
 
-"libcoldstart.so" is a native shared library used by the Android application. Native ".so" libraries are ELF binaries containing compiled native code and related sections required by the application.
+Architecture-specific analysis is critical because compiled instructions and binary layouts differ significantly between builds.
 
-For security research, the library can be examined to understand:
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-- Native code structure
-- ELF headers and sections
-- Imported/exported symbols
-- Native initialization routines
-- String references
-- TLS/SSL-related routines
-- Certificate-validation logic
-- Native control flow
-- Architecture-specific instructions
+## 🔐 SSL_PINNING_RESEARCH
 
----
+SSL/TLS certificate pinning is a security mechanism that restricts applications to accepting only expected certificates or public keys during TLS communication.
 
-🏗️ Supported Architectures
+This research examines the **native-side implementation** of pinning, particularly security-sensitive functionality embedded in native libraries.
 
-The project is intended to cover common Android architectures:
-
-Architecture| Status
-ARM64-v8a| ✅ Supported
-armeabi-v7a / ARM| ✅ Supported
-x86| ✅ Supported
-x86_64| ✅ Supported
-
-Architecture-specific analysis is important because the compiled instructions and binary layout can differ between builds.
-
----
-
-🔬 SSL Pinning Research
-
-SSL/TLS certificate pinning is a security mechanism that can restrict an application to accepting only expected certificates or public keys during TLS communication.
-
-This project studies the native side of that mechanism, particularly where security-sensitive functionality may exist inside native libraries.
-
-Research Areas
-
-Application
-    │
-    ▼
-Java / Kotlin Layer
-    │
-    ▼
-JNI / Native Interface
-    │
-    ▼
+### Research Flow
+```
+Application Layer
+    ↓
+Java / Kotlin Interface
+    ↓
+JNI / Native Bridge
+    ↓
 Native Libraries
-    │
-    ▼
+    ↓
 TLS / Certificate Validation
-    │
-    ▼
+    ↓
 Network Communication
+```
 
-The goal is to understand the relationship between the Android application layer and native security-sensitive components.
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
----
+## 🧪 LIBCOLDSTART.SO_ANALYSIS
 
-🧪 "libcoldstart.so" Analysis
+### Static Examination Areas
 
-The research workflow can include static examination of:
+```
+ELF Binary Structure
+├── Architecture Detection
+├── Entry Point Mapping
+├── Program Headers
+└── Section Headers
 
-libcoldstart.so
+Native Code Analysis
+├── Function Extraction
+├── String References
+├── Cross-Reference Mapping
+└── Control Flow Analysis
 
-Typical analysis areas include:
+Security Assessment
+├── TLS-Related Routines
+├── Certificate Handling
+├── Native Validation Logic
+└── JNI Interactions
+```
 
-ELF Header
-   │
-   ├── Architecture
-   ├── Entry Point
-   ├── Program Headers
-   └── Section Headers
+### Analysis Methodology
+- **Static Analysis:** IDA Pro, Ghidra, Radare2
+- **Dynamic Analysis:** Frida instrumentation, native debugging
+- **String Analysis:** Symbol extraction and cross-referencing
+- **Control Flow:** Function call chains and dependency mapping
 
-Native Code
-   │
-   ├── Functions
-   ├── Strings
-   ├── Cross References
-   └── Control Flow
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-Security Analysis
-   │
-   ├── TLS-related routines
-   ├── Certificate handling
-   ├── Native validation logic
-   └── JNI interactions
+## ⚙️ RESEARCH_ENVIRONMENT
 
----
+| Component | Specification |
+|---|---|
+| Operating System | Android (rooted device/emulator) |
+| Target Package | `com.facebook.katana` |
+| Native Binary | `libcoldstart.so` |
+| Binary Format | ELF 64-bit / 32-bit |
+| Supported Architectures | ARM / ARM64 / x86 / x86_64 |
+| Access Level | Root / Debug Environment |
+| Analysis Tools | Ghidra, IDA, Frida, Radare2 |
+| Purpose | Security Research & Analysis |
 
-📂 Important Path
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-/data/data/com.facebook.katana/lib-compressed/libcoldstart.so
+## 📌 VERSION_TRACKING
 
-Package
+Native libraries change between releases. Always record exact application versions during analysis.
 
-com.facebook.katana
+```
+Facebook Version: 578.0.0.40.75
+Package:          com.facebook.katana
+Library:          libcoldstart.so
+Architecture:     ARM64-v8a
+Analysis Date:    [DATE_HERE]
+```
 
-Library
+Version tracking is critical because library structure and security implementations vary significantly between releases.
 
-libcoldstart.so
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
----
+## 🌍 PROJECT_INFO
 
-🛠️ Research Environment
+| Attribute | Value |
+|---|---|
+| Location | Bangladesh 🇧🇩 |
+| Project Name | NOOR-404 |
+| Research Focus | Android Native Security |
+| Primary Domain | SSL/TLS Analysis |
 
-Component| Information
-OS| Android
-Target Package| "com.facebook.katana"
-Native Binary| "libcoldstart.so"
-Binary Format| ELF
-Architectures| ARM / ARM64 / x86 / x86_64
-Access Level| Root / Authorized Debug Environment
-Purpose| Security Research & Analysis
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
----
+## 📡 CONTACT_&_SOCIAL
 
-📌 Version Information
+<p align="center">
+  <a href="https://discord.gg/8k9R7Bv4">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+  </a>
+  <a href="https://t.me/N_O_O_R_4_0_4">
+    <img src="https://img.shields.io/badge/Telegram-0088cc?style=for-the-badge&logo=telegram&logoColor=white"/>
+  </a>
+  <a href="https://github.com/NOOR-404">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="mailto:daniyaln.hossai@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
 
-Because native libraries can change between releases, always record the exact application version used during analysis.
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-Facebook Version : 578.0.0.40.75
-Package          : com.facebook.katana
-Library          : libcoldstart.so
+## ⚖️ DISCLAIMER
 
-Keeping version information is important because a library structure or security implementation from one release may not match another release.
+This repository is provided for **authorized security research and educational purposes only**.
 
----
+⚠️ **Legal Notice:**
+- Do not use this project to intercept, modify, or inspect traffic on applications, accounts, devices, or networks without explicit authorization.
+- Only conduct analysis on devices and applications for which you have legal permission.
+- The author assumes no responsibility for misuse or unauthorized application of information contained herein.
+- Compliance with applicable laws and regulations is your sole responsibility.
 
-🌍 Project Location
+<img src="https://raw.githubusercontent.com/NOOR-404/NOOR-404/refs/heads/main/Assests/Rainbow.gif" width="100%">
 
-Location : Bangladesh 🇧🇩
-Project  : NOOR-404
-Research : Android Native Security
-
----
-
-📞 Contact
-
-<div align="center">👤 NOOR-404
-
-Security Research • Android Native Analysis • Reverse Engineering
-
-<br/>GitHub: "NOOR-404"
-
-Telegram: "@N_O_O_R_4_0_4"
-
-Email: "daniyaln.hossai@gmail.com"
-
-</div>---
-
-⚖️ Disclaimer
-
-This repository is provided for educational and authorized security research purposes.
-
-Do not use this project to intercept, modify, or inspect traffic belonging to applications, accounts, devices, or networks without appropriate authorization.
-
-The author is not responsible for misuse of the information or tools contained in this repository.
-
----
-
-<div align="center">🔐 NOOR-404
-
-"Android Security" • "Native Analysis" • "SSL/TLS Research"
-
+<div align="center">
+  <strong>🔐 NOOR-404 | Android Security Research | Native Analysis | SSL/TLS Investigation</strong>
+  <br/>
+  <em>Building security tools through deep technical research</em>
 </div>
