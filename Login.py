@@ -1,0 +1,40 @@
+curl -X POST 'https://b-graph.facebook.com/graphql' ^
+-H 'host: b-graph.facebook.com' ^
+-H 'x-fb-request-analytics-tags: {"network_tags":{"product":"350685531728","request_category":"graphql","purpose":"fetch","retry_attempt":"0"},"application_tags":"graphservice"}' ^
+-H 'x-fb-rmd: state=URL_ELIGIBLE' ^
+-H 'priority: u=0' ^
+-H 'content-encoding: gzip' ^
+-H 'x-zero-eh: 664c0faaac849cb891d0a261fbb72a12' ^
+-H 'user-agent: [FBAN/FB4A;FBAV/578.0.0.40.75;FBBV/1063016987;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_US;FBRV/0;FBCR/Verizon;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/PGFM10;FBSV/9;FBOP/1;FBCA/x86_64:arm64-v8a;]' ^
+-H 'x-fb-friendly-name: FbBloksActionRootQuery-com.bloks.www.bloks.caa.login.async.headers_process_transparency_event' ^
+-H 'x-zero-f-device-id: 71f99456-d788-4d24-bb2a-15d72db8d46d' ^
+-H 'x-graphql-request-purpose: fetch' ^
+-H 'x-fb-device-group: 5389' ^
+-H 'x-tigon-is-retry: False' ^
+-H 'x-graphql-client-library: graphservice' ^
+-H 'content-type: application/x-www-form-urlencoded' ^
+-H 'x-fb-net-hni: 310005' ^
+-H 'x-fb-sim-hni: 310005' ^
+-H 'authorization: OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32' ^
+-H 'x-zero-state: unknown' ^
+-H 'x-meta-zca: empty_token' ^
+-H 'app-scope-id-header: ae0e2f86-8601-466d-ad7f-21dbb1a5650e' ^
+-H 'x-fb-connection-type: WIFI' ^
+-H 'x-meta-usdid: 6edc8622-b734-4e7f-ac53-95ccc498d8c7.1789826794.MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZZd1tilEeLRKTKRBs2f19o5hkfKTcZEy_hSTJIRDajXPTZDAsDzvRPbGcw4QMIaedDrPJ5laOSFpqmNcwUTo6w.MEYCIQDFtUbcknrthfjK9L81PshSSH0bg56AW1g3Zaq7sAFckAIhAPyyI8eKwtv4EiOXJ061oHeehmJ1Z3et0wtUzZA3q0sQ' ^
+-H 'accept-encoding: gzip, deflate' ^
+-H 'x-fb-http-engine: Tigon/Liger' ^
+-H 'x-fb-client-ip: True' ^
+-H 'x-fb-server-cluster: True' ^
+-H 'x-fb-conn-uuid-client: oGTxcIGxLR8NxrbOIFIPyQ==' ^
+--data-urlencode 'method=post' ^
+--data-urlencode 'format=json' ^
+--data-urlencode 'server_timestamps=true' ^
+--data-urlencode 'locale=en_US' ^
+--data-urlencode 'purpose=fetch' ^
+--data-urlencode 'fb_api_req_friendly_name=FbBloksActionRootQuery-com.bloks.www.bloks.caa.login.async.headers_process_transparency_event' ^
+--data-urlencode 'fb_api_caller_class=graphservice' ^
+--data-urlencode 'client_doc_id=11994080421623718916785082173' ^
+--data-urlencode 'fb_api_client_context={"is_background":false}' ^
+--data-urlencode 'variables={"params":{"params":"{\"params\":\"{\\\"client_input_params\\\":{\\\"si_device_param_network_info\\\":{\\\"active_subscriptions_info\\\":null,\\\"default_subscription_info\\\":{\\\"network_type\\\":null,\\\"is_data_roaming\\\":1,\\\"is_esim\\\":null,\\\"is_gsm_roaming\\\":0,\\\"is_sim_sms_capable\\\":null,\\\"is_mobile_data_enabled\\\":0,\\\"sim_carrier_id\\\":-1,\\\"sim_carrier_id_name\\\":null,\\\"sim_state\\\":5,\\\"sim_operator\\\":\\\"310005\\\",\\\"sim_operator_name\\\":\\\"Verizon+Wireless\\\",\\\"signal_strength\\\":null,\\\"group_id_level_1\\\":null,\\\"network_operator\\\":\\\"310005\\\"},\\\"is_airplane_mode\\\":0,\\\"is_active_network_cellular\\\":0,\\\"is_device_sms_capable\\\":1,\\\"sim_count\\\":1,\\\"is_wifi\\\":1},\\\"aac\\\":\\\"Q7jiDQEG0AEPEEknXOBAOYg16bXhwen6uLG9-WXW60jzT-0yQKwNmI6lLMetO7FQFHdG43lXxnPptxUkw8_3OAxr3Gom0ybO-h2d_L4cwbtKK4cWavt237ba5wSvU-s8Tkby8ewhaKQSv_xLpdzKrBqeGzUrHDVnz-pHeTbo0o8mFfa-DdaKLzdBgXFQSboOJsuwOjnKw3c6wTt5wmWruX8ZXH-54pn3b2LJiysYSNiuPgKvJOYUYfXW5fk9f2ac\\\",\\\"block_store_machine_id\\\":null,\\\"lois_settings\\\":{\\\"lois_token\\\":\\\"\\\"},\\\"cloud_trust_token\\\":null,\\\"zero_balance_state\\\":\\\"init\\\",\\\"network_bssid\\\":null,\\\"machine_id\\\":\\\"\\\"},\\\"server_params\\\":{\\\"is_from_logged_out\\\":0,\\\"layered_homepage_experiment_group\\\":null,\\\"device_id\\\":\\\"ae0e2f86-8601-466d-ad7f-21dbb1a5650e\\\",\\\"login_surface\\\":\\\"login_home\\\",\\\"waterfall_id\\\":\\\"753ff83e-76bf-4c3f-8b0e-ab05b448c93a\\\",\\\"INTERNAL__latency_qpl_instance_id\\\":87783059200470,\\\"is_platform_login\\\":0,\\\"header_transparency_event_location\\\":\\\"login\\\",\\\"login_entry_point\\\":\\\"logged_out\\\",\\\"INTERNAL__latency_qpl_marker_id\\\":36707139,\\\"family_device_id\\\":\\\"71f99456-d788-4d24-bb2a-15d72db8d46d\\\",\\\"offline_experiment_group\\\":\\\"caa_iteration_v6_perf_fb_2\\\",\\\"headers_flow_id\\\":\\\"ebe302b1-26bd-42b2-a1ff-b9730e7c100c\\\",\\\"transparency_event_type\\\":\\\"affirmative_action\\\",\\\"access_flow_version\\\":\\\"pre_mt_behavior\\\",\\\"header_transparency_event_name\\\":\\\"login_button_clicked\\\",\\\"is_from_logged_in_switcher\\\":0}}\"}","bloks_versioning_id":"a0a64048203112daaec7daec70feca998f2220cd551309e234f9d678fe5443bc","app_id":"com.bloks.www.bloks.caa.login.async.headers_process_transparency_event"},"scale":"3","nt_context":{"using_white_navbar":true,"styles_id":"0c28c2fb31d4e397db6494e82e716e1b","pixel_ratio":3,"is_push_on":true,"is_flipper_enabled":false,"android_device_performance_class":null,"debug_tooling_metadata_token":null,"gpu_memory_mb":null,"theme_params":[{"value":["three_neutral_gray"],"design_system_name":"XMDS"},{"value":[],"design_system_name":"FDS"}],"bloks_version":"a0a64048203112daaec7daec70feca998f2220cd551309e234f9d678fe5443bc","android_os_api_level":28}}' ^
+--data-urlencode 'fb_api_analytics_tags=["GraphServices"]' ^
+--data-urlencode 'client_trace_id=bc00f13e-5d3c-4826-9602-e653ebc99e2a'
