@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=76e033&center=true&vCenter=true&width=750&lines=Facebook+SSL+Pinning+Bypass+%7C+NOOR-404;libcoldstart.so+Patch+%7C+ARM64+%26+x86_64" alt="Facebook SSL Pinning Bypass | NOOR-404" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=750&lines=NOOR-404+%7C+Facebook+SSL+Pinning+Bypass;Native+Library+Patch+%7C+ARM64+%26+x86_64;libcoldstart.so+%7C+SSL+Analysis+%26+Research" alt="NOOR-404 | Facebook SSL Pinning Bypass" />
 
 <br/>
 
