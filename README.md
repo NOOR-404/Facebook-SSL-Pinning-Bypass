@@ -29,7 +29,7 @@ Android native-library research project focused on understanding SSL/TLS certifi
 |----------|---------|
 | **Application** | Facebook for Android |
 | **Package Name** | `com.facebook.katana` |
-| **Application Version** | `YOUR_VERSION_HERE` |
+| **Application Version** | `578.0.0.40.75` |
 | **Platform** | Android |
 | **Architecture** | ARM64 / ARM / x86 / x86_64 |
 | **Root Access** | Required for protected application-directory access |
@@ -225,8 +225,8 @@ Library          : libcoldstart.so
 
 Security Research • Android Native Analysis • Reverse Engineering
 
-GitHub  : https://github.com/NOOR-404
-Telegram: https://t.me/N_O_O_R_4_0_4
+GitHub  : NOOR-404
+Telegram: N_O_O_R_4_0_4
 Email   : daniyaln.hossai@gmail.com
 ```
 
