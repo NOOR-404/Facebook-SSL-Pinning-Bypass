@@ -1,4 +1,9 @@
-# 🔐 NOOR-404
+<div align="center">  <img src="https://github.com/user-attachments/assets/7fc5885c-dba1-44f7-9d18-bc7a0dc21a8a" />  <br/>  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=750&lines=NOOR-404+%7C+Facebook+SSL+Pinning+Bypass;Native+Library+Patch+%7C+ARM64+%26+x86_64;libcoldstart.so+%7C+SSL+Analysis+%26+Research" alt="NOOR-404 | Facebook SSL Pinning Bypass" />  <br/>  
+
+
+
+</div>  
+---
 ## Facebook Android SSL Pinning — Native Library Research
 
 Android native-library research project focused on understanding SSL/TLS certificate-pinning mechanisms, native library structures, and security-analysis workflows in Facebook's Android application.
