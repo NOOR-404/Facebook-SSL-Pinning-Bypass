@@ -190,11 +190,9 @@ Purpose| Security Research & Analysis
 
 Because native libraries can change between releases, always record the exact application version used during analysis.
 
-Facebook Version : YOUR_VERSION_HERE
+Facebook Version : 578.0.0.40.75
 Package          : com.facebook.katana
 Library          : libcoldstart.so
-Architecture     : YOUR_ARCHITECTURE
-Android Version  : YOUR_ANDROID_VERSION
 
 Keeping version information is important because a library structure or security implementation from one release may not match another release.
 
@@ -214,11 +212,11 @@ Research : Android Native Security
 
 Security Research • Android Native Analysis • Reverse Engineering
 
-<br/>GitHub: "YOUR_GITHUB_USERNAME"
+<br/>GitHub: "NOOR-404"
 
-Telegram: "YOUR_TELEGRAM_USERNAME"
+Telegram: "@N_O_O_R_4_0_4"
 
-Email: "YOUR_EMAIL@example.com"
+Email: "daniyaln.hossai@gmail.com"
 
 </div>---
 
