@@ -8,9 +8,9 @@
 
 <br/>
 
-![Arch](https://img.shields.io/badge/Arch-ARM64%20%7C%20x86%20%7C%20x86__64-FF6B35?style=for-the-badge&logo=arm&logoColor=white)
-![Root](https://img.shields.io/badge/Root-Required-DC143C?style=for-the-badge&logo=android&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Arch](https://img.shields.io/badge/Arch-ARM64%20%7C%20x86%20%7C%20x86__64-00FFFF?style=for-the-badge&logo=archlinux&logoColor=00FFFF)
+![Root](https://img.shields.io/badge/Root-Required-FF003C?style=for-the-badge&logo=android&logoColor=FFFFFF)
+![License](https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logoColor=00FFFF)
 
 </div>
 
