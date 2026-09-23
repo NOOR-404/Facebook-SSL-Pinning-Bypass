@@ -7,7 +7,6 @@
 ![Arch](https://img.shields.io/badge/Arch-ARM64%20%7C%20x86%20%7C%20x86__64-00FFFF?style=for-the-badge&logo=archlinux&logoColor=00FFFF)
 ![Root](https://img.shields.io/badge/Root-Not_Required-FF003C?style=for-the-badge&logo=android&logoColor=FFFFFF)
 ![License](https://img.shields.io/badge/License-MIT-000000?style=for-the-badge&logoColor=00FFFF)
-
 [![Download APK](https://img.shields.io/badge/⬇_DOWNLOAD_FACEBOOK_APK_v578.0.0.40.75-1877F2?style=flat&logo=facebook&logoColor=white)](../../releases/latest)
 
 </div>
